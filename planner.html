@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive academic planner to add, complete and delete tasks.">
+  <title>Academic Planner | Your Name Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-bar" aria-label="Main navigation">
+      <a class="logo" href="index.html">Your<span>Name</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a class="active" href="planner.html">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Academic Planner</h1>
+    <p>Plan assignments, tests and study sessions. Your tasks are saved in this browser.</p>
+
+    <section class="card">
+      <form id="taskForm" class="planner-form" novalidate>
+        <input type="text" id="taskTitle" placeholder="e.g. Submit COS 106 term project" aria-label="Task title">
+        <input type="date" id="taskDate" aria-label="Due date">
+        <button type="submit" class="btn">Add Task</button>
+      </form>
+      <p class="error-msg" id="taskError" role="alert"></p>
+
+      <div class="stats">
+        <span>Total: <strong id="totalCount">0</strong></span>
+        <span>Completed: <strong id="doneCount">0</strong></span>
+        <span>Pending: <strong id="pendingCount">0</strong></span>
+      </div>
+
+      <div class="filters">
+        <button type="button" class="active" data-filter="all">All</button>
+        <button type="button" data-filter="active">Pending</button>
+        <button type="button" data-filter="completed">Completed</button>
+      </div>
+
+      <ul id="taskList" aria-live="polite"></ul>
+      <button type="button" class="btn accent" id="clearDone">Clear Completed</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Your Name. COS 106 Term Project. <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+  <script src="main.js"></script>
+  <script src="planner.js"></script>
+</body>
+</html>

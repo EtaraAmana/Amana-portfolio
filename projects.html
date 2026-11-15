@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selected web and software projects by Your Name.">
+  <title>Projects | Your Name Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-bar" aria-label="Main navigation">
+      <a class="logo" href="index.html">Your<span>Name</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a class="active" href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My Projects</h1>
+    <p>A selection of things I have built. Replace the links with your real demo and GitHub URLs.</p>
+
+    <div class="grid">
+      <article class="card project-card">
+        <img src="project1.svg" alt="Screenshot of the Student Result Checker project" loading="lazy">
+        <div class="body">
+          <h2>Student Result Checker</h2>
+          <p>A web page where students enter a matric number to view course scores and GPA, calculated with JavaScript.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <p class="links"><a href="#" target="_blank" rel="noopener">Live Demo</a><a href="https://github.com/your-username" target="_blank" rel="noopener">Source Code</a></p>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <img src="project2.svg" alt="Screenshot of the Campus Events Page project" loading="lazy">
+        <div class="body">
+          <h2>Campus Events Page</h2>
+          <p>A responsive page listing upcoming university events in a card grid, with a mobile-friendly layout.</p>
+          <ul class="tags"><li>HTML</li><li>CSS Grid</li><li>Flexbox</li></ul>
+          <p class="links"><a href="#" target="_blank" rel="noopener">Live Demo</a><a href="https://github.com/your-username" target="_blank" rel="noopener">Source Code</a></p>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <img src="project3.svg" alt="Screenshot of the Budget Tracker project" loading="lazy">
+        <div class="body">
+          <h2>Budget Tracker</h2>
+          <p>A simple tool that helps students record income and expenses and see their remaining balance.</p>
+          <ul class="tags"><li>JavaScript</li><li>DOM</li><li>localStorage</li></ul>
+          <p class="links"><a href="#" target="_blank" rel="noopener">Live Demo</a><a href="https://github.com/your-username" target="_blank" rel="noopener">Source Code</a></p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Your Name. COS 106 Term Project. <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

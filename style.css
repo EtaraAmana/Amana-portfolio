@@ -19,11 +19,10 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { color-scheme: dark; background: var(--bg); }
+html { color-scheme: dark; background: linear-gradient(180deg, #2e4d07 0%, #223b04 100%) fixed; min-height: 100%; }
 
 body {
   font-family: "Montserrat", "Segoe UI", Tahoma, Arial, sans-serif;
-  background: linear-gradient(180deg, #2e4d07 0%, #223b04 100%) fixed;
   color: var(--text);
   line-height: 1.65;
   min-height: 100vh;

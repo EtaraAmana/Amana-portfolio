@@ -48,9 +48,9 @@ p { margin-bottom: 1rem; }
 .bg-circles .c2 { top: 12%;  left: 12%; width: clamp(130px, 19vw, 285px); animation: floatB 26s ease-in-out infinite alternate; }
 .bg-circles .c3 { top: -18%; right: 8%; animation: floatC 24s ease-in-out infinite alternate; }
 .bg-circles .c4 { top: 18%;  right: 6%; animation: floatA 29s ease-in-out infinite alternate-reverse; }
-.bg-circles .c5 { bottom: -6%; left: -4%; width: clamp(180px, 27vw, 375px); animation: floatB 22s ease-in-out infinite alternate; }
+.bg-circles .c5 { bottom: -6%; left: -4%; width: clamp(130px, 19vw, 285px); animation: floatB 22s ease-in-out infinite alternate; }
 .bg-circles .c6 { bottom: -22%; left: 8%; animation: floatC 27s ease-in-out infinite alternate-reverse; }
-.bg-circles .c7 { bottom: -14%; right: 4%; width: clamp(150px, 22vw, 315px); animation: floatA 19s ease-in-out infinite alternate; }
+.bg-circles .c7 { bottom: -14%; right: 4%; width: clamp(130px, 19vw, 285px); animation: floatA 19s ease-in-out infinite alternate; }
 
 @keyframes floatA { from { transform: translate(0, 0) scale(1); }    to { transform: translate(5vw, 6vh) scale(1.06); } }
 @keyframes floatB { from { transform: translate(0, 0) scale(1); }    to { transform: translate(-6vw, 4vh) scale(0.95); } }

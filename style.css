@@ -1,6 +1,6 @@
 /* ===== Green glass-circles portfolio theme ===== */
 :root {
-  --bg: #2e4d07;
+  --bg: #000000;
   --bg-deep: #274104;
   --lime: #9be800;
   --lime-soft: #c8f58a;
@@ -19,7 +19,7 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { color-scheme: dark; background: linear-gradient(180deg, #2e4d07 0%, #223b04 100%) fixed; min-height: 100%; }
+html { color-scheme: dark; background: #000000; min-height: 100%; }
 
 body {
   font-family: "Montserrat", "Segoe UI", Tahoma, Arial, sans-serif;
